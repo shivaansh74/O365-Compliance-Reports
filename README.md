@@ -34,13 +34,7 @@ Before running this script, ensure the following:
     cd O365-Compliance-Reports
     ```
 
-3. Install the required Python dependencies:
-
-    ```bash
-    pip install requests pytz pandas python-dotenv
-    ```
-
-4. Update the environment variables for Azure AD and email credentials by modifying the `.env` file or setting them directly in your environment.
+3. Update the environment variables for Azure AD and email credentials by modifying setting them directly in your environment.
 
    Add the following details to your environment variables:
 
