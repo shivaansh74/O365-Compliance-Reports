@@ -6,21 +6,17 @@ from collections import defaultdict
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from dotenv import load_dotenv
 import os
 
-# Load environment variables from .env file
-load_dotenv()
+# Azure AD credentials from environment variables
+client_id = "YOUR CLIENT ID"
+client_secret = "YOUR CLIENT SECRET"
+tenant_id = "YOUR TENANT ID"
 
-# Azure AD credentials
-client_id = os.getenv('CLIENT_ID')
-client_secret = os.getenv('CLIENT_SECRET')
-tenant_id = os.getenv('TENANT_ID')
-
-# Email credentials
-email_sender = os.getenv('EMAIL_SENDER')
-email_password = os.getenv('EMAIL_PASSWORD')
-email_recipient = os.getenv('EMAIL_RECIPIENT')
+# Email credentials from environment variables
+email_sender = "YOUREMAIL@EXAMPLE.COM"
+email_password = "YOUREMAILPASSWORD"
+email_recipient = "RECIPIENTEMAIL@EXAMPLE.COM"
 
 # Mapping of complex app names to simplified versions
 app_name_mapping = {
